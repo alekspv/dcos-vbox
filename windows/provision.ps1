@@ -10,6 +10,9 @@ ForEach($adapter in $adapters) {
 }
 
 # Download dcos_install.ps1
+# Download dcos_install.ps1
+New-Item -ItemType Directory -Force -Path C:\d2iq\
+New-Item -ItemType Directory -Force -Path C:\d2iq\dcos\
 Invoke-WebRequest -UseBasicParsing -Uri http://172.28.128.20:80/windows/prerequisites/dcos_install.ps1 -OutFile C:\Users\vagrant\Downloads\dcos_install.ps1
 
 # Run dcos_install.ps1
