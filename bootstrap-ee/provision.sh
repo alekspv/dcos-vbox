@@ -8,9 +8,12 @@ if [ -d genconf/serve ]; then
 	rm -fr genconf/serve
 fi
 
+#bash dcos_generate_config.ee.sh --hash-password admin
+
 bash dcos_generate_config.ee.sh
 
 bash dcos_generate_config_win.ee.sh
+
 
 rm dcos-genconf.*.tar
 

@@ -1,2 +1,3 @@
 .vagrant/
 license.txt
+genconf/server/*
